@@ -1,0 +1,47 @@
+<h1>Registro de Facilitadores </h1>
+<%= form_for :facilitator do |f| %>
+    <p>
+    <%= f.label :Fechanacimiento %><br>
+    <%= f.text_field :Fechanacimiento %>
+    </p>
+    <p>
+    <%= f.label :Direccion %><br>
+    <%= f.text_field :Direccion %>
+    </p>
+    <p>
+    <%= f.label :Telefonocasa %><br>
+    <%= f.text_field :Telefonocasa %>
+    </p>
+    <p>
+    <%= f.label :Telefonooficina %><br>
+    <%= f.text_field :Telefonooficina %>
+    </p>
+    <p>
+    <%= f.label :Celular %><br>
+    <%= f.text_field :Celular %>
+    </p>
+    <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+    </p>
+    <p>
+    <%= f.label :Foto %><br>
+    <%= f.text_field :Foto %>
+    </p>
+    <p>
+    <%= f.label :Placavehiculo %><br>
+    <%= f.text_field :Placavehiculo %>
+    </p>
+    <p>
+      <%= f.label :Tipodevehiculo %><br>
+      <%= f.text_field :Tipodevehiculo %>
+    </p>
+    <p>
+    <%= f.label :Observacion %><br>
+    <%= f.text_area :Observacion %>
+  </p>
+   
+    <p>
+      <%= f.submit 'Guardar Facilitador' %>
+    </p>
+  <% end %>

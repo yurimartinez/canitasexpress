@@ -1,0 +1,29 @@
+<h1>Registro de Usuarios</h1>
+
+<%= form_for :user do |f| %>
+  
+    <p>
+      <%= f.label :Nombre %><br>
+      <%= f.text_field :Nombre %>
+    </p>
+    <p>
+    <%= f.label :Usuario %><br>
+    <%= f.text_field :Usuario %>
+    </p>
+    <p>
+    <%= f.label :Contraseña %><br>
+    <%= f.text_field :Contraseña %>
+    </p>
+    <p>
+    <%= f.label :Activo %><br>
+    <%= f.text_field :Activo %>
+    </p>
+    <p>
+      <%= f.label :contenido %><br>
+      <%= f.text_area :contenido %>
+    </p>
+   
+    <p>
+      <%= f.submit 'Guardar Usuario' %>
+    </p>
+  <%end %>

@@ -1,0 +1,39 @@
+<h1>Registro de Beneficiarios </h1>
+<%= form_for :beneficiary do |f| %>
+    <p>
+    <%= f.label :Fechanacimiento %><br>
+    <%= f.text_field :Fechanacimiento %>
+    </p>
+    <p>
+    <%= f.label :Direccion %><br>
+    <%= f.text_field :Direccion %>
+    </p>
+    <p>
+    <%= f.label :Telefonocasa %><br>
+    <%= f.text_field :Telefonocasa %>
+    </p>
+    <p>
+    <%= f.label :Celular %><br>
+    <%= f.text_field :Celular %>
+    </p>
+    <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+    </p>
+    <p>
+    <%= f.label :Eps %><br>
+    <%= f.text_field :Eps %>
+    </p>
+    <p>
+    <%= f.label :Foto %><br>
+    <%= f.text_field :Foto %>
+    </p>
+    <p>
+    <%= f.label :ConsideracionesEspeciales %><br>
+    <%= f.text_area :ConsideracionesEspeciales %>
+  </p>
+   
+    <p>
+      <%= f.submit 'Guardar Registro de Beneficiario' %>
+    </p>
+  <% end %>

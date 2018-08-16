@@ -1,0 +1,15 @@
+<h1>Tomar una cita</h1>
+<%= form_for :user do |f| %>
+    <p>
+      <%= f.label :Facilitador %><br>
+      <%= f.text_field :FAcilitador %>
+    </p>
+    <p>
+    <%= f.label :Servicio %><br>
+    <%= f.text_field :Servicio %>
+    </p>
+        
+    <p>
+      <%= f.submit 'Tomar Cita' %>
+    </p>
+  <% end %>

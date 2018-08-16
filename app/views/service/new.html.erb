@@ -1,0 +1,35 @@
+<h1>Solicitar un servicio</h1>
+<%= form_for :service do |f| %>
+    <p>
+      <%= f.label :Fechayhoradelservicio %><br>
+      <%= f.text_field :Fechayhoradelservicio %>
+    </p>
+    <p>
+    <%= f.label :DireccionOrigen %><br>
+    <%= f.text_field :DireccionOrigen %>
+    </p>
+    <p>
+    <%= f.label :DireccionDestino %><br>
+    <%= f.text_field :DireccionDestino %>
+    </p>
+    <p>
+    <%= f.label :Tiempodeduracion %><br>
+    <%= f.text_field :Tiempodeduracion %>
+    </p>
+    <p>
+      <%= f.label :Observacionesdelservicio %><br>
+      <%= f.text_area :Observacionesdelservicio %>
+    </p>
+    <p>
+    <%= f.label :Estadodelservicio %><br>
+    <%= f.text_field :Estadodelservicio %>
+    </p>
+    <p>
+    <%= f.label :Observacionesdelestadodelservicio %><br>
+    <%= f.text_area :Observacionesdelestadodeldelservicio %>
+    </p>
+
+    <p>
+      <%= f.submit 'Solicitar el servicio' %>
+    </p>
+  <% end %>
